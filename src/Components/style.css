@@ -10,14 +10,14 @@ body{
 }
 
 .container{
-    width: 90%;
+    width: 80%;
     margin: auto;
     padding-top: 100px;
     display: flex;
 }
 
 .left-content  .right-content{
-    flex-basis: 100%;
+    flex-basis: 80%;
 }
 
 .left-content{
@@ -30,7 +30,7 @@ body{
     width: 300px ;
     background-color: #3E8705;
     border-radius: 1rem;
-    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 5px rgba(0,0,0,0.10);
     padding: 0 1.5rem;
     display: flex;
     align-items: center;
