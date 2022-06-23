@@ -16,8 +16,8 @@ body{
     display: flex;
 }
 
-.left-content , .right-content{
-    flex-basis: 20%;
+.left-content  .right-content{
+    flex-basis: 100%;
 }
 
 .left-content{
@@ -86,7 +86,7 @@ body{
     outline: none;
     border: none;
     width: 150px;
-    padding: 0.3rem;
+    padding: 0.3rem 0;
     margin: 1rem;
     font-size: 17px;
     font-weight: bold;
