@@ -1,11 +1,11 @@
 import React from "react";
-import "./styles.css";
-import Navbar from "../components/Navbar";
-import Searchbar from "../components/Searchbar";
-import Pokedex from "../components/Pokedex";
-import { getPokemonData, getPokemons, searchPokemon } from "../api";
-import { FavoriteProvider } from "../contexts/favoritesContext";
-import Footer from "../components/Footer";
+import "./Styles.css";
+import Navbar from "./Components/Navbar";
+import Searchbar from "./Components/Searchbar";
+import Pokedex from "./Components/Pokedex";
+import { getPokemonData, getPokemons, searchPokemon } from "./api";
+import { FavoriteProvider } from "./context/favoritesContext";
+import Footer from "./Components/Footer";
 
 const { useState, useEffect } = React;
 

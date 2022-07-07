@@ -1,5 +1,5 @@
 import React from "react";
-import FavoriteContext from "../contexts/favoritesContext";
+import FavoriteContext from "../context/favoritesContext";
 
 const { useContext } = React;
 
