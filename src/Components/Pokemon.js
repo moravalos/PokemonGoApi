@@ -41,6 +41,7 @@ const Pokemon = (props) => {
           
         </div>
       </div>
+      
     </div>
   );
 };
