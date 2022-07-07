@@ -18,7 +18,6 @@ const Pokedex = (props) => {
   return (
     <div>
       <div className="header">
-        <h1>Pokedex</h1>
         <Pagination
           page={page + 1}
           totalPages={total}
@@ -29,7 +28,7 @@ const Pokedex = (props) => {
       {loading ? (
         <div>Cargando pokemones...</div>
       ) : (
-        <div className="pokedex-grid">
+        <div className="container">
           {pokemons.map((pokemon, idx) => {
             return <Pokemon pokemon={pokemon} key={pokemon.name} />;
           })}

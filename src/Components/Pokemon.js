@@ -7,9 +7,7 @@ const Pokemon = (props) => {
     FavoriteContext
   );
 
-  const redHeart = "❤️";
-  const blackHeart = "🖤";
-  const heart = favoritePokemons.includes(pokemon.name) ? redHeart : blackHeart;
+ 
 
   const clickHeart = (e) => {
     e.preventDefault();
@@ -40,9 +38,7 @@ const Pokemon = (props) => {
               );
             })}
           </div>
-          <button onClick={clickHeart} className="pokemon-heart-btn">
-            <div className="pokemon-favorite">{heart}</div>
-          </button>
+          
         </div>
       </div>
     </div>
