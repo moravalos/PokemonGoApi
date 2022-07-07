@@ -26,6 +26,13 @@ body{
     grid-gap: 2rem;
 }
 
+.center-container{
+    width: 40%;
+    margin: auto;
+    padding-top: 40px;
+    display: flex;
+}
+
 .card{
     width: 300px ;
     background-color: #3E8705;
@@ -37,6 +44,7 @@ body{
     justify-content: space-between;
     box-sizing: border-box;
 }
+
 
 .right-content{
     width: 50%;
@@ -82,6 +90,31 @@ body{
     display: flex;
 }
 
+.btn{
+    
+    font-size: 25px;
+    font-weight: bold;
+    color:white;
+    background-color: black;
+    border-radius: 8px;
+    text-align: center;
+    width: 12%;
+    padding-top: 10px;
+    display:flex;
+}
+
+.buscar{
+    width: 900px ;
+    height: 70px;
+    background-color: #3E8705;
+    border-radius: 1rem;
+    padding: 0 1.5rem;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.10);
+    box-sizing: border-box;
+    font-weight: bold;
+text-align: right;
+}
+
 .btn-group button{
     outline: none;
     border: none;
@@ -98,4 +131,19 @@ body{
 .img{
     width: 30%;
     height: 30%;
+}
+
+.nombre{
+    width: 700px;
+    height: 35px;
+    align-items:center ;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.10);
+    padding: 0 1rem;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
