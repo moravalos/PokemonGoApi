@@ -1,15 +1,45 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "./Styles.css";
-import Navbar from "./Components/Navbar";
 import Searchbar from "./Components/Searchbar";
 import Pokedex from "./Components/Pokedex";
 import { getPokemonData, getPokemons, searchPokemon } from "./api";
 import { FavoriteProvider } from "./context/favoritesContext";
 import Footer from "./Components/Footer";
+import { useTranslation } from "react-i18next";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Navbar from "./Components/Navegacion/Navbar";
+import inicio from "./Components/paginas/inicio";
+import pokemon from "./Components/paginas/pokemon";
+import items from "./Components/paginas/item";
 
 const { useState, useEffect } = React;
 
 const localStorageKey = "favorite_pokemon";
+
+function Welcome() {
+  const { t, i18n } = useTranslation(['welcome']);
+  function changeToEnglish() {
+    i18n.changeLanguage("en");
+  }
+
+  function changeToSpanish() {
+    i18n.changeLanguage("es");
+  }
+  
+  const welcomes = t("title");
+  
+  return (
+    <div className="App">
+        <p>Idioma actual: {i18n.language}</p>
+        <button onClick={changeToEnglish}>Inglés</button>
+        <button onClick={changeToSpanish}>Español</button>
+        <br></br>
+        <p>{welcomes}</p>
+    </div>
+  );
+}
+
+
 
 export default function App() {
   const [pokemons, setPokemons] = useState([]);
@@ -23,7 +53,7 @@ export default function App() {
   const fetchPokemons = async () => {
     try {
       setLoading(true);
-      const data = await getPokemons(10, 10 * page);
+      const data = await getPokemons(6, 6 * page);
       const promises = data.results.map(async (pokemon) => {
         return await getPokemonData(pokemon.url);
       });
@@ -92,7 +122,9 @@ export default function App() {
       }}
     >
       <div>
-        <Navbar />
+        <Router>
+          <Navbar/>
+        </Router>
         <div className="App">
           <Searchbar onSearch={onSearch} />
           {notFound ? (
@@ -109,8 +141,10 @@ export default function App() {
             />
           )}
         </div>
-        <Footer />
-      </div>
+        <Suspense fallback="Cargando traducciones...">
+      <Welcome />
+    </Suspense>      
+    </div>
     </FavoriteProvider>
   );
 }

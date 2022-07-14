@@ -1,14 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-*{
-    
-}
-
-body{
-}
-
-.container{
-    
-}
 
 .left-content  .right-content{
     flex-basis: 80%;
@@ -26,6 +16,7 @@ body{
     padding-top: 40px;
     display: flex;
 }
+
 
 .card{
     width: 300px ;
