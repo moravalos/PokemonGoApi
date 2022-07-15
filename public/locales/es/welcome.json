@@ -1,3 +1,6 @@
 {
-    "title": "Bienvenido"
+    "title": "Bienvenido",
+    "info": "Seleccione El Pokemon de Preferencia",
+    "search": "Escriba el nombre de su Pokemon Favorito",
+    "profile": "Perfil del Estudiante"
 }

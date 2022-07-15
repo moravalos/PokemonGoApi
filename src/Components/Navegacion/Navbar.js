@@ -10,13 +10,13 @@ const Navbar = () => {
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <NavLink className="nav-link" to='/inicio' >Perfil</NavLink>
+          <NavLink className="nav-link" to='/inicio' >Buscador</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to='/pokemon'>Features</NavLink>
+          <NavLink className="nav-link" to='/pokemon'>Pokemon</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to='/items'>Pricing</NavLink>
+          <NavLink className="nav-link" to='/items'>Perfil</NavLink>
         </li>
       </ul>
     </div>

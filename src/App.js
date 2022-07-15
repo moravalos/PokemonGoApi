@@ -6,6 +6,8 @@ import inicio from "./Components/paginas/inicio";
 import pokemon from "./Components/paginas/pokemon";
 import items from "./Components/paginas/item";
 import Appsearch from "./appsearch";
+import Appprofile from "./Appprofile";
+import Apppoke  from "./Apppoke";
 
 export default function App() {
 
@@ -16,8 +18,8 @@ export default function App() {
         <Navbar/>
         <Routes>
           <Route path="/inicio" element={<Appsearch/>}/>
-          <Route path="/pokemon" element={<pokemon/>}/>
-          <Route path="/items" element={<items/>}/>
+          <Route path="/pokemon" element={<Apppoke/>}/>
+          <Route path="/items" element={<Appprofile/>}/>
         </Routes>
         </BrowserRouter>
         

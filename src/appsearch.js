@@ -6,6 +6,8 @@ import { getPokemonData, getPokemons, searchPokemon } from "./api";
 import { FavoriteProvider } from "./context/favoritesContext";
 import Footer from "./Components/Footer";
 import { useTranslation } from "react-i18next";
+import usa from "./imgs/usa.png";
+import mex from "./imgs/mex.png";
 
 
 const { useState, useEffect } = React;
@@ -23,13 +25,16 @@ function Welcome() {
   }
 
   const welcomes = t("title");
+  const info = t("info");
+  const search = t("search");
 
   return (
     <div className="language">
-      <button onClick={changeToEnglish}><img src=""/></button>
-      <button onClick={changeToSpanish}>Español</button>
+      <button onClick={changeToEnglish}><img  className="banderas" src={usa}/></button>
+      <button onClick={changeToSpanish}><img className="banderas" src={mex}/></button>
       <br></br>
-      <p languagewell>{welcomes}</p>
+      <h1 languagewell>{welcomes}</h1>
+      <h2>{search}</h2>
     </div>
   );
 }

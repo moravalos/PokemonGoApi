@@ -1,3 +1,6 @@
 {
-    "title": "Welcome"
+    "title": "Welcome",
+    "info": "Select the Pokemon of your Preference",
+    "search": "Write the name of your favorite Pokemon",
+    "profile": "Student profile"
 }
