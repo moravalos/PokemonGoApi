@@ -52,12 +52,12 @@
     align-items: center;
     justify-content:center;
     box-sizing: border-box;
-  max-width: 600px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   
@@ -69,6 +69,13 @@
     color: white;
     padding: 15px 15px;
     margin-left: 40px;
+    width: 10%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   
@@ -107,6 +114,17 @@
     align-items: center;
   }
   
+  .language{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
  
  
   .pagination-btn {
@@ -116,10 +134,16 @@
     width: 32px;
     height: 32px;
     margin: 0px 8px;
-    display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    width: 10%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   

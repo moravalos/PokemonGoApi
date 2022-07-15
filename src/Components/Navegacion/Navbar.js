@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 const { useContext } = React;
 
 const Navbar = () => {
@@ -9,16 +10,13 @@ const Navbar = () => {
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+          <NavLink className="nav-link" to='/inicio' >Perfil</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Features</a>
+          <NavLink className="nav-link" to='/pokemon'>Features</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Pricing</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link disabled">Disabled</a>
+          <NavLink className="nav-link" to='/items'>Pricing</NavLink>
         </li>
       </ul>
     </div>
