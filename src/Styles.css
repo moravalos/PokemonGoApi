@@ -147,6 +147,16 @@
     border-bottom-left-radius: 50% 50%;
   }
 
+  .logo{
+    width: 50%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .utags{
     width: 300px;
     max-width: 600px;

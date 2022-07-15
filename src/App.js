@@ -8,6 +8,7 @@ import items from "./Components/paginas/item";
 import Appsearch from "./appsearch";
 import Appprofile from "./Appprofile";
 import Apppoke  from "./Apppoke";
+import Logo from "./imgs/pokemon.png";
 
 export default function App() {
 
@@ -22,7 +23,7 @@ export default function App() {
           <Route path="/items" element={<Appprofile/>}/>
         </Routes>
         </BrowserRouter>
-        
+        <img className="logo" src={Logo}/>
       </div>
   );
 
